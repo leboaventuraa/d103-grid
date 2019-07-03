@@ -1,0 +1,49 @@
+body {
+    display: grid;
+    grid-template-areas: 'navbar navbar navbar navbar'
+                        ' header header header header'
+                        ' section section section section'
+                        'footer footer footer footer';
+    grid-template-rows: 10vh 500px 60vh 15vh;
+    grid-template-columns: 25vw 25vw 20vw  30vw;
+    background-color: white; 
+                
+    margin: 0%;
+    font-family: 'Maven Pro', sans-serif;
+    
+}
+
+a{
+    text-decoration: none;
+    font-size: 20pt;
+    color: pink;
+}
+
+nav {
+    grid-area: navbar;
+    background-color:purple;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+header {
+    grid-area: header;
+    background-image: url("images/avengers-assemble-2.jpg");
+    background-repeat: no-repeat;
+}
+
+section {
+    grid-area: section;
+    background-color: red;
+}
+
+aside {
+    grid-area: batata;
+    background-color: rgb(8, 193, 240);
+}
+
+footer {
+    grid-area: footer;
+    background-color: cyan;
+}
